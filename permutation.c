@@ -1,23 +1,4 @@
-#include <stdlib.h>
 #include <unistd.h>
-
-int	has_duplicate(char *str)
-{
-	int	i = 0, j = 0;
-
-	while (str[i])
-	{
-		j = i + 1;
-		while (str[j])
-		{
-			if (str[i] == str[j])
-				return 1;
-			j++;
-		}
-		i++;
-	}
-	return 0;
-}
 
 int	ft_strlen(char *str)
 {
@@ -26,19 +7,6 @@ int	ft_strlen(char *str)
 	while (str[i])
 		i++;
 	return (i);
-}
-
-int	ft_isalpha(char *str)
-{
-	int	i = 0;
-
-	while (str[i])
-	{
-		if (!((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')))
-			return (0);
-		i++;
-	}
-	return (1);
 }
 
 void	swap(char *a, char *b)
@@ -50,39 +18,67 @@ void	swap(char *a, char *b)
 	*b = tmp;
 }
 
-void	permute(char *str, int l, int r)
+void	sort(char *str)
 {
-	int i;
+	int	i = 0;
+	int j;
 
-	if (l == r)
+	while (str[i])
 	{
-		write(1, str, r + 1);
-		write(1, "\n", 1);
+		j = i + 1;
+		while (str[j])
+		{
+			if (str[j] < str[i])
+				swap(&str[i], &str[j]);
+			j++;
+		}
+		i++;
+	}
+}
+
+void	print(char *s, int len)
+{
+	int	i = 0;
+	while (i < len)
+		write(1, &s[i++], 1);
+	write(1, "\n", 1);
+}
+
+void	permute(char *str, char *tmp, int depth, int len)
+{
+	int	i;
+	char	c;
+
+	if (depth == len)
+	{
+		print(tmp, len);
 		return;
 	}
-	i = l;
-	while (i <= r)
+
+	i = 0;
+	while (i < len)
 	{
-		swap(&str[l], &str[i]);
-		permute(str, l + 1, r);
-		swap(&str[l], &str[i]);
+		if (str[i])
+		{
+			c = str[i];
+			tmp[depth] = str[i];
+			str[i] = 0;
+			permute(str, tmp, depth + 1, len);
+			str[i] = c;
+		}
 		i++;
 	}
 }
 
 int main(int ac, char **av)
 {
-	int	len;
+	char	tmp[100];
+	int		len;
 
 	if (ac != 2)
-		return 1;
-	if (has_duplicate(av[1]))
-		return 1;
-	if (!ft_isalpha(av[1]))
-		return 1;
-	
-	len = ft_strlen(av[1]) - 1;
-	permute(av[1], 0, len);
-	return 0;
+		return 0;
 
+	sort(av[1]);
+	len = ft_strlen(av[1]);
+	permute(av[1], tmp, 0, len);
 }
