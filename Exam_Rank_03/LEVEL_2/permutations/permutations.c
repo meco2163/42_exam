@@ -76,7 +76,7 @@ int main(int ac, char **av)
 	int		len;
 
 	if (ac != 2)
-		return 0;
+		return 1;
 
 	sort(av[1]);
 	len = ft_strlen(av[1]);
