@@ -1,0 +1,31 @@
+Assignment name  : rip
+Expected files   : *.c *.h
+Allowed functions: puts, write
+--------------------------------------------------------------------------------
+⚠️  Bu bir yapay zeka çevirisidir. Orijinal metni okumak için subject_en.txt
+dosyasına göz atınız.
+--------------------------------------------------------------------------------
+
+Yalnızca parantez içeren bir stringi argüman olarak alacak bir program yazın.
+Eğer parantezler dengesizse (örneğin "())")
+programınız ifadenin dengeli olması için minimum sayıda parantezi kaldırmalıdır.
+Kaldırmak derken, boşluk ile değiştirmek kastedilmektedir.
+Ardından tüm çözümleri yazdıracaksınız (birden fazla olabilir).
+
+Çözümlerin sırası önemli değildir.
+
+Örneğin şu şekilde çalışmalıdır:
+$> ./rip '(()' | cat -e
+ ()$
+( )$
+$> ./rip '((()()())())' | cat -e
+((()()())())$
+$> ./rip '()())()'| cat -e
+()() ()$
+()( )()$
+( ())()$
+$> ./rip '(()(()(' | cat -e
+(()  ) $
+( )( ) $
+( ) () $
+ ()( ) $

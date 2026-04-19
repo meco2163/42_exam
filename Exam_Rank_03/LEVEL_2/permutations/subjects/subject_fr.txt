@@ -1,0 +1,32 @@
+Assignment name  : permutations
+Expected files   : *.c *.h
+Allowed functions: puts, malloc, calloc, realloc, free, write
+---------------------------------------------------------------
+⚠️  Ceci est une traduction réalisée par intelligence artificielle. Pour lire
+le texte original, veuillez consulter le fichier subject_en.txt.
+---------------------------------------------------------------
+
+Écrivez un programme qui affichera toutes les permutations d'une chaîne de
+caractères donnée en argument.
+
+Les solutions doivent être données dans l'ordre alphabétique.
+
+Nous ne testerons pas votre programme avec des chaînes contenant des doublons
+(ex : 'abccd').
+
+Par exemple, ceci devrait fonctionner :
+
+$> ./permutations a | cat -e
+a$
+
+$> ./permutations ab | cat -e
+ab$
+ba$
+
+$> ./permutations abc | cat -e
+abc$
+acb$
+bac$
+bca$
+cab$
+cba$

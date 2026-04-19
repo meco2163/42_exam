@@ -1,0 +1,53 @@
+Assignment name : broken_GNL
+Expected files  : get_next_line.c get_next_line.h
+Allowed functions : read, free, malloc
+--------------------------------------------------------------------------------
+⚠️  Bu bir yapay zeka çevirisidir. Orijinal metni okumak için subject_en.txt
+dosyasına göz atınız.
+--------------------------------------------------------------------------------
+'get_next_line' fonksiyonunu get_next_line.c dosyasında onarın, prototipi şu
+şekilde olmalıdır:
+char *get_next_line(int fd);
+
+Diğer fonksiyonları da onarmanız gerekebilir.
+
+'get_next_line' fonksiyonunun açıklaması:
+
+Fonksiyonunuz, parametre olarak verilen dosya tanımlayıcısından (file descriptor)
+okunan bir satırı döndürmelidir.
+
+'Okunan bir satır', '\n' (ASCII kodu 0x0a) ile veya Dosya Sonu (EOF) ile biten
+0 ile n karakter arasındaki bir karakter dizisi olarak tanımlanır.
+
+Okunan satırın sonunda bir '\n' varsa, satır '\n' dahil edilerek
+döndürülmelidir.
+
+EOF'a ulaştığınızda, mevcut tamponu bir char * içinde saklamalı ve onu
+döndürmelisiniz. Tampon boşsa, NULL döndürmelisiniz.
+
+Bir hata durumunda NULL döndürün.
+
+NULL döndürülmüyorsa, işaretçi (pointer) free edilebilir olmalıdır.
+
+Programınız -D BUFFER_SIZE=xx bayrağı ile derlenecektir; bu değer,
+fonksiyonlarınızdaki read çağrıları için tampon boyutu olarak kullanılmalıdır.
+
+Fonksiyonunuz bellek sızıntılarından (memory leak) arınmış olmalıdır.
+
+EOF'a ulaştığınızda, fonksiyonunuz döndürülen satır dışında malloc ile
+ayrılmış herhangi bir belleği tutmamalıdır.
+
+get_next_line fonksiyonunuzu bir döngü içinde çağırmak, bir dosya
+tanımlayıcısında bulunan metni, metnin boyutundan veya satırlarının
+herhangi birinin boyutundan bağımsız olarak, metnin sonuna kadar her
+seferinde bir satır okuyarak okumanızı sağlayacaktır.
+
+Fonksiyonunuzun bir dosyadan, standart çıktıdan, bir yönlendirmeden vb.
+okurken doğru davrandığından emin olun.
+
+İki get_next_line çağrısı arasında dosya tanımlayıcısı üzerinde başka bir
+fonksiyon çağrısı yapılmayacaktır.
+
+Son olarak, get_next_line'ın bir ikili (binary) dosyadan okurken tanımsız
+davranışa sahip olduğunu kabul ediyoruz.
+--------------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+Assignement name : n_queens
+
+Expected files : *.c *.h
+
+Allowed functions : atoi, fprintf, write, calloc, malloc, free, realloc, stdout, stderr
+
+-------------------------------------------------------------------------
+⚠️  Bu bir yapay zeka çevirisidir. Orijinal metni okumak için subject_en.txt
+dosyasına göz atınız.
+-------------------------------------------------------------------------
+
+Argüman olarak verilen bir n değeri için n vezir probleminin tüm çözümlerini
+yazdıracak bir program yazın.
+Negatif değerlerle test yapmayacağız.
+Çözümlerin sırası önemli değildir.
+
+Çözümleri aşağıdaki formatta göstereceksiniz:
+<p1> <p2> <p3> ... \n
+burada pn, 0'dan başlayarak her sütundaki vezirin satır indeksidir.
+
+Örneğin şu şekilde çalışmalıdır:
+$> ./n_queens 2 | cat -e
+
+$> ./n_queens 4 | cat -e
+1 3 0 2$
+2 0 3 1$
+
+$> ./n_queens 7 | cat -e
+0 2 4 6 1 3 5$
+0 3 6 2 5 1 4$
+vb...

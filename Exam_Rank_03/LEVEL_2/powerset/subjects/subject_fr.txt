@@ -1,0 +1,57 @@
+Assignment name  : powerset
+Expected files   : *.c *.h
+Allowed functions: atoi, printf, fprintf, malloc, calloc, realloc, free, stdout,
+write
+--------------------------------------------------------------------------------
+⚠️  Ceci est une traduction réalisée par intelligence artificielle. Pour lire
+le texte original, veuillez consulter le fichier subject_en.txt.
+--------------------------------------------------------------------------------
+
+Écrivez un programme qui prendra en argument un entier n suivi d'un ensemble s
+d'entiers distincts.
+Votre programme devra afficher tous les sous-ensembles de s dont la somme des
+éléments est n.
+
+L'ordre des lignes n'est pas important, mais l'ordre des éléments dans un
+sous-ensemble l'est : il doit correspondre à l'ordre dans l'ensemble initial s.
+De cette façon, vous ne devriez pas avoir de doublons (ex : '1 2' et '2 1').
+Par exemple, en utilisant la commande ./powerset 5 1 2 3 4 5
+cette sortie est valide :
+1 4
+2 3
+5
+celle-ci est également valide :
+2 3
+5
+1 4
+mais pas celle-ci :
+4 1
+3 2
+5
+
+
+En cas d'erreur malloc, votre programme se terminera avec le code 1.
+
+Nous ne testerons pas avec des ensembles invalides (par exemple '1 1 2').
+
+Indice : le sous-ensemble vide est un sous-ensemble valide de tout ensemble.
+Il sera affiché comme une ligne vide.
+
+Par exemple, ceci devrait fonctionner :
+$> ./powerset 3 1 0 2 4 5 3 | cat -e
+3$
+0 3$
+1 2$
+1 0 2$
+$> ./powerset 12 5 2 1 8 4 3 7 11 | cat -e
+8 4$
+1 11$
+1 4 7$
+1 8 3$
+2 3 7$
+5 7$
+5 4 3$
+5 2 1 4$
+$> ./powerset 0 1 -1 | cat -e
+$
+1 -1$

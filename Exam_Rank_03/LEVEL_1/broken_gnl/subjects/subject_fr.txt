@@ -1,0 +1,53 @@
+Assignment name : broken_GNL
+Expected files  : get_next_line.c get_next_line.h
+Allowed functions : read, free, malloc
+--------------------------------------------------------------------------------
+⚠️  Ceci est une traduction réalisée par intelligence artificielle. Pour lire
+le texte original, veuillez consulter le fichier subject_en.txt.
+--------------------------------------------------------------------------------
+Réparez la fonction 'get_next_line' dans le fichier get_next_line.c, dont le
+prototype doit être :
+char *get_next_line(int fd);
+
+Vous pourriez également avoir besoin de réparer d'autres fonctions.
+
+Description de la fonction 'get_next_line' :
+
+Votre fonction doit retourner une ligne qui a été lue depuis le descripteur
+de fichier passé en paramètre.
+
+Une 'ligne qui a été lue' est définie comme une succession de 0 à n caractères
+se terminant par '\n' (code ASCII 0x0a) ou par la fin de fichier (EOF).
+
+La ligne doit être retournée en incluant le '\n' s'il y en a un à la fin
+de la ligne qui a été lue.
+
+Lorsque vous atteignez l'EOF, vous devez stocker le tampon actuel dans un
+char * et le retourner. Si le tampon est vide, vous devez retourner NULL.
+
+En cas d'erreur, retournez NULL.
+
+Si la valeur retournée n'est pas NULL, le pointeur doit pouvoir être libéré
+avec free.
+
+Votre programme sera compilé avec le flag -D BUFFER_SIZE=xx, qui doit être
+utilisé comme taille de tampon pour les appels à read dans vos fonctions.
+
+Votre fonction ne doit pas avoir de fuites mémoire (memory leaks).
+
+Lorsque vous atteignez l'EOF, votre fonction ne doit conserver aucune mémoire
+allouée avec malloc, à l'exception de la ligne qui a été retournée.
+
+Appeler votre fonction get_next_line dans une boucle vous permettra de lire
+le texte disponible sur un descripteur de fichier ligne par ligne jusqu'à la
+fin du texte, quelle que soit la taille du texte ou de l'une de ses lignes.
+
+Assurez-vous que votre fonction se comporte correctement lors de la lecture
+depuis un fichier, depuis la sortie standard, depuis une redirection, etc.
+
+Aucun appel à une autre fonction ne sera effectué sur le descripteur de fichier
+entre deux appels de get_next_line.
+
+Enfin, nous considérons que get_next_line a un comportement indéfini lors de
+la lecture d'un fichier binaire.
+--------------------------------------------------------------------------------

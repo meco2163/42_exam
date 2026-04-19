@@ -1,0 +1,55 @@
+Assignment name: filter
+Expected files: filter.c
+Allowed functions: read, write, strlen, memmem, memmove, malloc, calloc,
+realloc, free, printf, fprintf, stdout, stderr, perror
+--------------------------------------------------------------------------------
+⚠️  Bu bir yapay zeka çevirisidir. Orijinal metni okumak için subject_en.txt
+dosyasına göz atınız.
+--------------------------------------------------------------------------------
+
+Bir ve yalnızca bir argüman alan bir program yazın.
+
+Programınız stdin'den okuyacak ve okunan tüm içeriği stdout'a yazacaktır;
+ancak s'nin her geçtiği yer '*' ile değiştirilmelidir (s'nin uzunluğu kadar).
+Programınız rastgele tampon boyutlarıyla, özel bir read fonksiyonu kullanılarak
+test edilecektir. Bu nedenle programınızda ayarlanan tampon, her yeni çağrıda
+farklı sayıda karakter ile doldurulacaktır.
+
+
+Örneğin:
+
+./filter bonjour
+şu komutla aynı şekilde davranacaktır:
+sed 's/bonjour/*******/g'
+
+./filter abc
+şu komutla aynı şekilde davranacaktır:
+sed's/abc/***/g'
+
+Daha genel olarak programınız, bu dizinde bulunan filter.sh kabuk betiğinin
+eşdeğeri olmalıdır (programınızı onunla karşılaştırabilirsiniz).
+
+Bir read veya malloc sırasında hata oluşursa, stderr'e "Error: " ve ardından
+hata mesajını yazmalı ve 1 döndürmelisiniz.
+
+Program argümansız, boş bir argümanla veya birden fazla argümanla çağrılırsa,
+1 döndürmelidir.
+
+Örneğin şu şekilde çalışmalıdır:
+
+$> echo 'abcdefaaaabcdeabcabcdabc' | ./filter abc | cat -e
+***defaaa***de******d***$
+$> echo 'ababcabababc' | ./filter ababc | cat -e
+*****ab*****$
+$>
+
+NOTLAR:
+memmem dahil etme:
+                #define _GNU_SOURCE
+			    #include <string.h>
+
+perror dahil etme:
+                #include <errno.h>
+
+read dahil etme:
+                #include <fcntl.h>

@@ -1,0 +1,33 @@
+Assignment name  : rip
+Expected files   : *.c *.h
+Allowed functions: puts, write
+--------------------------------------------------------------------------------
+⚠️  Ceci est une traduction réalisée par intelligence artificielle. Pour lire
+le texte original, veuillez consulter le fichier subject_en.txt.
+--------------------------------------------------------------------------------
+
+Écrivez un programme qui prendra en argument une chaîne de caractères contenant
+uniquement des parenthèses.
+Si les parenthèses ne sont pas équilibrées (par exemple "())")
+votre programme devra supprimer le nombre minimum de parenthèses pour que
+l'expression soit équilibrée.
+Par supprimer, nous entendons remplacer par des espaces.
+Vous afficherez ensuite toutes les solutions (il peut y en avoir plus d'une).
+
+L'ordre des solutions n'est pas important.
+
+Par exemple, ceci devrait fonctionner :
+$> ./rip '(()' | cat -e
+ ()$
+( )$
+$> ./rip '((()()())())' | cat -e
+((()()())())$
+$> ./rip '()())()'| cat -e
+()() ()$
+()( )()$
+( ())()$
+$> ./rip '(()(()(' | cat -e
+(()  ) $
+( )( ) $
+( ) () $
+ ()( ) $

@@ -1,0 +1,32 @@
+Assignment name  : permutations
+Expected files   : *.c *.h
+Allowed functions: puts, malloc, calloc, realloc, free, write
+---------------------------------------------------------------
+⚠️  Bu bir yapay zeka çevirisidir. Orijinal metni okumak için subject_en.txt
+dosyasına göz atınız.
+---------------------------------------------------------------
+
+Argüman olarak verilen bir stringin tüm permütasyonlarını yazdıracak bir
+program yazın.
+
+Çözümler alfabetik sırada verilmelidir.
+
+Programınızı tekrar eden karakterler içeren stringlerle test etmeyeceğiz
+(ör: 'abccd').
+
+Örneğin şu şekilde çalışmalıdır:
+
+$> ./permutations a | cat -e
+a$
+
+$> ./permutations ab | cat -e
+ab$
+ba$
+
+$> ./permutations abc | cat -e
+abc$
+acb$
+bac$
+bca$
+cab$
+cba$

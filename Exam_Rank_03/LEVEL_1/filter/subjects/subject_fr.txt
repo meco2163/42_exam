@@ -1,0 +1,57 @@
+Assignment name: filter
+Expected files: filter.c
+Allowed functions: read, write, strlen, memmem, memmove, malloc, calloc,
+realloc, free, printf, fprintf, stdout, stderr, perror
+--------------------------------------------------------------------------------
+⚠️  Ceci est une traduction réalisée par intelligence artificielle. Pour lire
+le texte original, veuillez consulter le fichier subject_en.txt.
+--------------------------------------------------------------------------------
+
+Écrivez un programme qui prendra un et un seul argument.
+
+Votre programme lira ensuite depuis stdin et écrira tout le contenu lu sur stdout,
+sauf que chaque occurrence de s doit être remplacée par '*' (autant que la longueur
+de s). Votre programme sera testé avec des tailles de tampon aléatoires, en
+utilisant une fonction read personnalisée. Par conséquent, le tampon défini dans
+votre programme sera rempli avec un nombre différent de caractères à chaque
+nouvel appel.
+
+
+Par exemple :
+
+./filter bonjour
+se comportera de la même manière que :
+sed 's/bonjour/*******/g'
+
+./filter abc
+se comportera de la même manière que :
+sed's/abc/***/g'
+
+Plus généralement, votre programme doit être l'équivalent du script shell
+filter.sh présent dans ce répertoire (vous pouvez comparer votre programme
+avec celui-ci).
+
+En cas d'erreur lors d'un read ou d'un malloc, vous devez écrire "Error: "
+suivi du message d'erreur sur stderr et retourner 1.
+
+Si le programme est appelé sans arguments, avec un argument vide ou avec
+plusieurs arguments, il doit retourner 1.
+
+Par exemple, ceci devrait fonctionner :
+
+$> echo 'abcdefaaaabcdeabcabcdabc' | ./filter abc | cat -e
+***defaaa***de******d***$
+$> echo 'ababcabababc' | ./filter ababc | cat -e
+*****ab*****$
+$>
+
+NOTES :
+memmem includes :
+                #define _GNU_SOURCE
+			    #include <string.h>
+
+perror includes :
+                #include <errno.h>
+
+read includes :
+                #include <fcntl.h>

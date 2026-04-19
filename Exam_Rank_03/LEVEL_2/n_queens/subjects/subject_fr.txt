@@ -1,0 +1,31 @@
+Assignement name : n_queens
+
+Expected files : *.c *.h
+
+Allowed functions : atoi, fprintf, write, calloc, malloc, free, realloc, stdout, stderr
+
+-------------------------------------------------------------------------
+⚠️  Ceci est une traduction réalisée par intelligence artificielle. Pour lire
+le texte original, veuillez consulter le fichier subject_en.txt.
+-------------------------------------------------------------------------
+
+Écrivez un programme qui affichera toutes les solutions au problème des n reines
+pour un n donné en argument.
+Nous ne testerons pas avec des valeurs négatives.
+L'ordre des solutions n'est pas important.
+
+Vous afficherez les solutions sous le format suivant :
+<p1> <p2> <p3> ... \n
+où pn sont l'indice de ligne de la reine dans chaque colonne en commençant par 0.
+
+Par exemple, ceci devrait fonctionner :
+$> ./n_queens 2 | cat -e
+
+$> ./n_queens 4 | cat -e
+1 3 0 2$
+2 0 3 1$
+
+$> ./n_queens 7 | cat -e
+0 2 4 6 1 3 5$
+0 3 6 2 5 1 4$
+etc...

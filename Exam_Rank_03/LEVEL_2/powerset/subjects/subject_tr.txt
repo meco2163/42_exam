@@ -1,0 +1,57 @@
+Assignment name  : powerset
+Expected files   : *.c *.h
+Allowed functions: atoi, printf, fprintf, malloc, calloc, realloc, free, stdout,
+write
+--------------------------------------------------------------------------------
+⚠️  Bu bir yapay zeka çevirisidir. Orijinal metni okumak için subject_en.txt
+dosyasına göz atınız.
+--------------------------------------------------------------------------------
+
+Argüman olarak bir n tamsayısı ve ardından birbirinden farklı tamsayılardan
+oluşan bir s kümesi alacak bir program yazın.
+Programınız, elemanlarının toplamı n olan s'nin tüm alt kümelerini
+görüntülemelidir.
+
+Satırların sırası önemli değildir, ancak bir alt kümedeki elemanların sırası
+önemlidir: başlangıç kümesi s'deki sırayla eşleşmelidir.
+Bu şekilde, tekrar eden çıktınız olmamalıdır (ör: '1 2' ve '2 1').
+Örneğin, ./powerset 5 1 2 3 4 5 komutu kullanıldığında
+bu çıktı geçerlidir:
+1 4
+2 3
+5
+bu da geçerlidir:
+2 3
+5
+1 4
+ancak bu geçerli değildir:
+4 1
+3 2
+5
+
+
+Bir malloc hatası durumunda programınız 1 kodu ile çıkış yapacaktır.
+
+Geçersiz kümelerle test yapmayacağız (örneğin '1 1 2').
+
+İpucu: boş alt küme, herhangi bir kümenin geçerli bir alt kümesidir. Boş bir
+satır olarak görüntülenecektir.
+
+Örneğin şu şekilde çalışmalıdır:
+$> ./powerset 3 1 0 2 4 5 3 | cat -e
+3$
+0 3$
+1 2$
+1 0 2$
+$> ./powerset 12 5 2 1 8 4 3 7 11 | cat -e
+8 4$
+1 11$
+1 4 7$
+1 8 3$
+2 3 7$
+5 7$
+5 4 3$
+5 2 1 4$
+$> ./powerset 0 1 -1 | cat -e
+$
+1 -1$
