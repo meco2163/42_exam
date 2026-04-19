@@ -1,3 +1,5 @@
+> 📁 **Files:** [sol_1/](sol_1/) · [sol_2/](sol_2/)
+
 <p align="center"><a href="#-english">English</a> · <a href="#-türkçe">Türkçe</a> · <a href="#-français">Français</a></p>
 
 ---

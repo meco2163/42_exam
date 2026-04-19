@@ -1,3 +1,5 @@
+> 📁 **Files:** [rip.c](rip.c)
+
 # rip — Çözüm Mimarisi
 
 ## Genel Yaklaşım

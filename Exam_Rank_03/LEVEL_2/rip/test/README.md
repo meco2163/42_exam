@@ -1,3 +1,5 @@
+> 📁 **Files:** [rip_tester.sh](rip_tester.sh)
+
 # rip — Tester Açıklaması
 
 ## Çalıştırma

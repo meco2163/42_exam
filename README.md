@@ -56,14 +56,14 @@ EXAM_RANK_02_EN_END -->
 
 > 📖 Level overviews: [Level 1](Exam_Rank_03/LEVEL_1/) · [Level 2](Exam_Rank_03/LEVEL_2/)
 
-| Level | Question | Solution | Subject | Test | Guide |
-|:-----:|:---------|:--------:|:-------:|:----:|:-----:|
-| **1** | broken_gnl | [sol_1](Exam_Rank_03/LEVEL_1/broken_gnl/solution/sol_1/) · [sol_2](Exam_Rank_03/LEVEL_1/broken_gnl/solution/sol_2/) | [EN](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_1/broken_gnl/test/broken_gnl_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_1/broken_gnl/solution/README.md) |
-| **1** | filter | [filter.c](Exam_Rank_03/LEVEL_1/filter/solution/filter.c) | [EN](Exam_Rank_03/LEVEL_1/filter/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_1/filter/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_1/filter/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_1/filter/test/filter_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_1/filter/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_1/filter/solution/README.md) |
-| **2** | n_queens | [n_queens.c](Exam_Rank_03/LEVEL_2/n_queens/solution/n_queens.c) | [EN](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/n_queens/test/n_queens_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/n_queens/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/n_queens/solution/README.md) |
-| **2** | permutations | [permutations.c](Exam_Rank_03/LEVEL_2/permutations/solution/permutations.c) | [EN](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/permutations/test/permutations_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/permutations/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/permutations/solution/README.md) |
-| **2** | powerset | [powerset.c](Exam_Rank_03/LEVEL_2/powerset/solution/powerset.c) | [EN](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/powerset/test/powerset_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/powerset/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/powerset/solution/README.md) |
-| **2** | rip | [rip.c](Exam_Rank_03/LEVEL_2/rip/solution/rip.c) | [EN](Exam_Rank_03/LEVEL_2/rip/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/rip/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/rip/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/rip/test/rip_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/rip/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/rip/solution/README.md) |
+| Level | Question | Solution | Subject | Test |
+|:-----:|:---------|:--------:|:-------:|:----:|
+| **1** | broken_gnl | [📂 solution](Exam_Rank_03/LEVEL_1/broken_gnl/solution/) | [📂 subject](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/) | [📂 test](Exam_Rank_03/LEVEL_1/broken_gnl/test/) |
+| **1** | filter | [📂 solution](Exam_Rank_03/LEVEL_1/filter/solution/) | [📂 subject](Exam_Rank_03/LEVEL_1/filter/subjects/) | [📂 test](Exam_Rank_03/LEVEL_1/filter/test/) |
+| **2** | n_queens | [📂 solution](Exam_Rank_03/LEVEL_2/n_queens/solution/) | [📂 subject](Exam_Rank_03/LEVEL_2/n_queens/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/n_queens/test/) |
+| **2** | permutations | [📂 solution](Exam_Rank_03/LEVEL_2/permutations/solution/) | [📂 subject](Exam_Rank_03/LEVEL_2/permutations/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/permutations/test/) |
+| **2** | powerset | [📂 solution](Exam_Rank_03/LEVEL_2/powerset/solution/) | [📂 subject](Exam_Rank_03/LEVEL_2/powerset/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/powerset/test/) |
+| **2** | rip | [📂 solution](Exam_Rank_03/LEVEL_2/rip/solution/) | [📂 subject](Exam_Rank_03/LEVEL_2/rip/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/rip/test/) |
 
 ---
 
@@ -188,14 +188,14 @@ EXAM_RANK_02_TR_END -->
 
 > 📖 Level genel bakış: [Level 1](Exam_Rank_03/LEVEL_1/) · [Level 2](Exam_Rank_03/LEVEL_2/)
 
-| Level | Soru | Çözüm | Subject | Test | Rehber |
-|:-----:|:-----|:-----:|:-------:|:----:|:------:|
-| **1** | broken_gnl | [sol_1](Exam_Rank_03/LEVEL_1/broken_gnl/solution/sol_1/) · [sol_2](Exam_Rank_03/LEVEL_1/broken_gnl/solution/sol_2/) | [EN](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_1/broken_gnl/test/broken_gnl_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_1/broken_gnl/solution/README.md) |
-| **1** | filter | [filter.c](Exam_Rank_03/LEVEL_1/filter/solution/filter.c) | [EN](Exam_Rank_03/LEVEL_1/filter/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_1/filter/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_1/filter/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_1/filter/test/filter_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_1/filter/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_1/filter/solution/README.md) |
-| **2** | n_queens | [n_queens.c](Exam_Rank_03/LEVEL_2/n_queens/solution/n_queens.c) | [EN](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/n_queens/test/n_queens_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/n_queens/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/n_queens/solution/README.md) |
-| **2** | permutations | [permutations.c](Exam_Rank_03/LEVEL_2/permutations/solution/permutations.c) | [EN](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/permutations/test/permutations_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/permutations/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/permutations/solution/README.md) |
-| **2** | powerset | [powerset.c](Exam_Rank_03/LEVEL_2/powerset/solution/powerset.c) | [EN](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/powerset/test/powerset_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/powerset/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/powerset/solution/README.md) |
-| **2** | rip | [rip.c](Exam_Rank_03/LEVEL_2/rip/solution/rip.c) | [EN](Exam_Rank_03/LEVEL_2/rip/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/rip/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/rip/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/rip/test/rip_tester.sh) | [kavramlar](Exam_Rank_03/LEVEL_2/rip/subjects/README.md) · [çözüm](Exam_Rank_03/LEVEL_2/rip/solution/README.md) |
+| Level | Soru | Çözüm | Konu | Test |
+|:-----:|:-----|:-----:|:----:|:----:|
+| **1** | broken_gnl | [📂 çözüm](Exam_Rank_03/LEVEL_1/broken_gnl/solution/) | [📂 konu](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/) | [📂 test](Exam_Rank_03/LEVEL_1/broken_gnl/test/) |
+| **1** | filter | [📂 çözüm](Exam_Rank_03/LEVEL_1/filter/solution/) | [📂 konu](Exam_Rank_03/LEVEL_1/filter/subjects/) | [📂 test](Exam_Rank_03/LEVEL_1/filter/test/) |
+| **2** | n_queens | [📂 çözüm](Exam_Rank_03/LEVEL_2/n_queens/solution/) | [📂 konu](Exam_Rank_03/LEVEL_2/n_queens/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/n_queens/test/) |
+| **2** | permutations | [📂 çözüm](Exam_Rank_03/LEVEL_2/permutations/solution/) | [📂 konu](Exam_Rank_03/LEVEL_2/permutations/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/permutations/test/) |
+| **2** | powerset | [📂 çözüm](Exam_Rank_03/LEVEL_2/powerset/solution/) | [📂 konu](Exam_Rank_03/LEVEL_2/powerset/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/powerset/test/) |
+| **2** | rip | [📂 çözüm](Exam_Rank_03/LEVEL_2/rip/solution/) | [📂 konu](Exam_Rank_03/LEVEL_2/rip/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/rip/test/) |
 
 ---
 
@@ -320,14 +320,14 @@ EXAM_RANK_02_FR_END -->
 
 > 📖 Aperçu des niveaux : [Level 1](Exam_Rank_03/LEVEL_1/) · [Level 2](Exam_Rank_03/LEVEL_2/)
 
-| Niveau | Question | Solution | Sujet | Test | Guide |
-|:------:|:---------|:--------:|:-----:|:----:|:-----:|
-| **1** | broken_gnl | [sol_1](Exam_Rank_03/LEVEL_1/broken_gnl/solution/sol_1/) · [sol_2](Exam_Rank_03/LEVEL_1/broken_gnl/solution/sol_2/) | [EN](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_1/broken_gnl/test/broken_gnl_tester.sh) | [concepts](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/README.md) · [solution](Exam_Rank_03/LEVEL_1/broken_gnl/solution/README.md) |
-| **1** | filter | [filter.c](Exam_Rank_03/LEVEL_1/filter/solution/filter.c) | [EN](Exam_Rank_03/LEVEL_1/filter/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_1/filter/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_1/filter/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_1/filter/test/filter_tester.sh) | [concepts](Exam_Rank_03/LEVEL_1/filter/subjects/README.md) · [solution](Exam_Rank_03/LEVEL_1/filter/solution/README.md) |
-| **2** | n_queens | [n_queens.c](Exam_Rank_03/LEVEL_2/n_queens/solution/n_queens.c) | [EN](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/n_queens/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/n_queens/test/n_queens_tester.sh) | [concepts](Exam_Rank_03/LEVEL_2/n_queens/subjects/README.md) · [solution](Exam_Rank_03/LEVEL_2/n_queens/solution/README.md) |
-| **2** | permutations | [permutations.c](Exam_Rank_03/LEVEL_2/permutations/solution/permutations.c) | [EN](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/permutations/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/permutations/test/permutations_tester.sh) | [concepts](Exam_Rank_03/LEVEL_2/permutations/subjects/README.md) · [solution](Exam_Rank_03/LEVEL_2/permutations/solution/README.md) |
-| **2** | powerset | [powerset.c](Exam_Rank_03/LEVEL_2/powerset/solution/powerset.c) | [EN](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/powerset/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/powerset/test/powerset_tester.sh) | [concepts](Exam_Rank_03/LEVEL_2/powerset/subjects/README.md) · [solution](Exam_Rank_03/LEVEL_2/powerset/solution/README.md) |
-| **2** | rip | [rip.c](Exam_Rank_03/LEVEL_2/rip/solution/rip.c) | [EN](Exam_Rank_03/LEVEL_2/rip/subjects/subject_en.txt) · [TR](Exam_Rank_03/LEVEL_2/rip/subjects/subject_tr.txt) · [FR](Exam_Rank_03/LEVEL_2/rip/subjects/subject_fr.txt) | [tester](Exam_Rank_03/LEVEL_2/rip/test/rip_tester.sh) | [concepts](Exam_Rank_03/LEVEL_2/rip/subjects/README.md) · [solution](Exam_Rank_03/LEVEL_2/rip/solution/README.md) |
+| Niveau | Question | Solution | Sujet | Test |
+|:------:|:---------|:--------:|:-----:|:----:|
+| **1** | broken_gnl | [📂 solution](Exam_Rank_03/LEVEL_1/broken_gnl/solution/) | [📂 sujet](Exam_Rank_03/LEVEL_1/broken_gnl/subjects/) | [📂 test](Exam_Rank_03/LEVEL_1/broken_gnl/test/) |
+| **1** | filter | [📂 solution](Exam_Rank_03/LEVEL_1/filter/solution/) | [📂 sujet](Exam_Rank_03/LEVEL_1/filter/subjects/) | [📂 test](Exam_Rank_03/LEVEL_1/filter/test/) |
+| **2** | n_queens | [📂 solution](Exam_Rank_03/LEVEL_2/n_queens/solution/) | [📂 sujet](Exam_Rank_03/LEVEL_2/n_queens/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/n_queens/test/) |
+| **2** | permutations | [📂 solution](Exam_Rank_03/LEVEL_2/permutations/solution/) | [📂 sujet](Exam_Rank_03/LEVEL_2/permutations/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/permutations/test/) |
+| **2** | powerset | [📂 solution](Exam_Rank_03/LEVEL_2/powerset/solution/) | [📂 sujet](Exam_Rank_03/LEVEL_2/powerset/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/powerset/test/) |
+| **2** | rip | [📂 solution](Exam_Rank_03/LEVEL_2/rip/solution/) | [📂 sujet](Exam_Rank_03/LEVEL_2/rip/subjects/) | [📂 test](Exam_Rank_03/LEVEL_2/rip/test/) |
 
 ---
 
